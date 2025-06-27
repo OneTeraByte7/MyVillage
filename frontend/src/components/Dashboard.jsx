@@ -21,7 +21,7 @@ function Dashboard() {
 
   const fetchProfiles = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/api/profiles', {
+      const res = await axios.get('https://myvillage-057l.onrender.com/api/profiles', {
         params: filters,
       });
       setProfiles(res.data);

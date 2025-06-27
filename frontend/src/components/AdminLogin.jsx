@@ -11,7 +11,7 @@ function AdminLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8000/api/auth/login', formData);
+      const res = await axios.post('https://myvillage-057l.onrender.com/api/auth/login', formData);
       login(res.data.token);
       navigate('/dashboard');
     } catch (err) {
